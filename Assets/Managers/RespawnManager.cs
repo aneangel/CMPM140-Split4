@@ -23,12 +23,12 @@ public class RespawnManager : MonoBehaviour
         player2SpawnPoint = new Vector2(0, 0);
     }
 
-    public void respawnPlayers(){
+    public void respawnPlayers(){ //Resetting player positions to checkpoint spawn point
         player1.transform.position = player1SpawnPoint;
         player2.transform.position = player2SpawnPoint;
     }
 
-    public void setSpawnPoint(Vector2 newPlayer1Spawn, Vector2 newPlayer2Spawn){
+    public void setSpawnPoint(Vector2 newPlayer1Spawn, Vector2 newPlayer2Spawn){ //Setting new spawnpoints
         player1SpawnPoint = newPlayer1Spawn;
         player2SpawnPoint = newPlayer2Spawn;
     }

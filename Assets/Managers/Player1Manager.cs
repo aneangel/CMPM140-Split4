@@ -33,7 +33,7 @@ public class Player1Manager : MonoBehaviour
     void Update()
     {
         getPlayerInput(); //Determine Player Left-Right Movement Input
-        if(Input.GetKey(KeyCode.W) && isGrounded){ //Jump if W is pressed
+        if(Input.GetKeyDown(KeyCode.W) && isGrounded){ //Jump if W is pressed
             playerJump();
         }
         if(currentStateCompleted == true){ //If state is complete, switch to next state

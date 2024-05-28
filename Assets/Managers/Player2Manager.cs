@@ -33,7 +33,7 @@ public class Player2Manager : MonoBehaviour
     void Update()
     {
         getPlayerInput(); //Determine Player Left-Right Movement Input
-        if(Input.GetKey(KeyCode.UpArrow) && isGrounded){ //Jump if UpArrow is pressed
+        if(Input.GetKeyDown(KeyCode.UpArrow) && isGrounded){ //Jump if UpArrow is pressed
             playerJump();
         }
         if(currentStateCompleted == true){ //If state is complete, switch to next state

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2341920959859387962}
   - component: {fileID: 7837011501804010966}
+  - component: {fileID: 953624616190894891}
   m_Layer: 0
   m_Name: Player2_Sprite
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 356376106676069116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.144, z: 0}
+  m_LocalScale: {x: 0.6637332, y: 0.6637332, z: 0.6637332}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8097072180297831483}
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 1516218316, guid: d174282d5437d3042a9bd2f1c6a35c40, type: 3}
   m_Color: {r: 0.48126557, g: 0.5135, b: 0.9716981, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,6 +85,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &953624616190894891
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356376106676069116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4b584cf5eb4cc4460902c5d572c6f0f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7334160739234035939
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6329726269808439480}
+  animator: {fileID: 953624616190894891}
   playerMoveSpeed: 0
   playerJumpSpeed: 0
   playerAcceleration: 0

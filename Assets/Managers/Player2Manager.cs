@@ -10,13 +10,14 @@ public class Player2Manager : MonoBehaviour
     private bool currentStateCompleted; //Boolean value to determine when to start new state
 
     [SerializeField] private Rigidbody2D rb;
-    //[SerializeField] private Animator animator; //For animations
+    [SerializeField] private Animator animator; //For animations
     [SerializeField] private float playerMoveSpeed, playerJumpSpeed, playerAcceleration;
     [Range(0f, 1f)] [SerializeField] private float playerDrag;
     [SerializeField] private BoxCollider2D groundCheckCollider;
     [SerializeField] private LayerMask groundMask, playerMask;
     private float horizontalMovement, moveIncrement, totalHorizontalSpeed;
     private bool isGrounded;
+    private string direction;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class Player2Manager : MonoBehaviour
         playerJumpSpeed = 7.8f;
         playerAcceleration = 1f;
         playerDrag = 0.9f;
+        direction = "right";
     }
 
     // Update is called once per frame
@@ -45,6 +47,7 @@ public class Player2Manager : MonoBehaviour
         checkIfGrounded();
         implementFriction();
         movePlayer();
+        updateSpriteDirection();
     }
 
     //STATE MACHINE FUNCTIONS
@@ -81,7 +84,7 @@ public class Player2Manager : MonoBehaviour
     //INDIVIDUAL STATE FUNCTIONS
     private void StartIdleState(){
         Debug.Log("Idle State");
-        //animator.Play("Player_Idle");
+        animator.Play("NinjaFrog_Idle");
     }
 
     private void UpdateIdle(){
@@ -92,12 +95,11 @@ public class Player2Manager : MonoBehaviour
 
     private void StartMoveState(){
         Debug.Log("Move State");
-        //animator.Play("Player_Move");
+        animator.Play("NinjaFrog_Run");
     }
 
     private void UpdateMove(){
         float xVelocity = rb.velocity.x; //To enable staying within Move State until velocity == 0f
-        //animator.speed = Mathf.Abs(xVelocity)/5f;
 
         if(Mathf.Abs(xVelocity) < 0.1f || isGrounded == false){
             currentStateCompleted = true;
@@ -106,7 +108,7 @@ public class Player2Manager : MonoBehaviour
 
     private void StartJumpState(){
         Debug.Log("Jump State");
-        //animator.Play("Player_Dash"); //DASH AND JUMP SHARE SAME ANIMATION
+        animator.Play("NinjaFrog_Jump");
     }
 
     private void UpdateJump(){
@@ -118,8 +120,10 @@ public class Player2Manager : MonoBehaviour
     //MOVEMENT & INPUT FUNCTIONS
     private void getPlayerInput(){ //Adjusts horizontal movement force depending on player input
         if(Input.GetKey(KeyCode.RightArrow)){ //Player will move Right when Right Arrow is pressed
+            direction = "right";
             horizontalMovement = 1f;
         } else if(Input.GetKey(KeyCode.LeftArrow)){ //Player will move Left when Left Arrow is pressed
+            direction = "left";
             horizontalMovement = -1f;
         } else{
             horizontalMovement = 0f;
@@ -134,6 +138,14 @@ public class Player2Manager : MonoBehaviour
             rb.velocity = new Vector2(totalHorizontalSpeed, rb.velocity.y);
         } else{ //Stop movement if no correct movement key is being pressed
             rb.velocity = new Vector2(0f, rb.velocity.y);
+        }
+    }
+
+    private void updateSpriteDirection(){ //Flip Sprite to face left or right depending on current direction value
+        if(direction == "right"){
+            transform.localScale = new Vector2(1, 1);
+        } else{ //direction == "left"
+            transform.localScale = new Vector2(-1, 1);
         }
     }
 

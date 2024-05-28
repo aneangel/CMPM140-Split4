@@ -15,7 +15,7 @@ C:/Users/Kaiyo/OneDrive/Documents/_UnityProjects/CMPM140-Split4
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54667
+50651
 Successfully changed project path to: C:/Users/Kaiyo/OneDrive/Documents/_UnityProjects/CMPM140-Split4
 C:/Users/Kaiyo/OneDrive/Documents/_UnityProjects/CMPM140-Split4
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Kaiyo/OneDrive/Documents/_UnityProjects/CMPM140-Split4
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11964] Host "[IP] 172.21.64.1 [Port] 0 [Flags] 2 [Guid] 3942129751 [EditorId] 3942129751 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GS8C2CFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [47656] Host "[IP] 172.21.64.1 [Port] 0 [Flags] 2 [Guid] 2288889843 [EditorId] 2288889843 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GS8C2CFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11964] Host "[IP] 172.21.64.1 [Port] 0 [Flags] 2 [Guid] 3942129751 [EditorId] 3942129751 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GS8C2CFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [47656] Host "[IP] 172.21.64.1 [Port] 0 [Flags] 2 [Guid] 2288889843 [EditorId] 2288889843 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-GS8C2CFP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 39.36 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 21.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.024954 seconds.
-- Loaded All Assemblies, in  0.606 seconds
+Registered in 0.012613 seconds.
+- Loaded All Assemblies, in  0.381 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.397 seconds
-Domain Reload Profiling: 998ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.274 seconds
+Domain Reload Profiling: 651ms
+	BeginReloadAssembly (128ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (124ms)
-	LoadAllAssembliesAndSetupDomain (221ms)
-		LoadAssemblies (181ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (124ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (218ms)
-			TypeCache.Refresh (216ms)
-				TypeCache.ScanAssembly (196ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (119ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (398ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (274ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (316ms)
+		SetupLoadedEditorAssemblies (217ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (218ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 998ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.080 seconds
-Refreshing native plugins compatible for Editor in 12.46 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.726 seconds
+Refreshing native plugins compatible for Editor in 7.65 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.191 seconds
-Domain Reload Profiling: 2261ms
-	BeginReloadAssembly (251ms)
+- Finished resetting the current domain, in  0.732 seconds
+Domain Reload Profiling: 1452ms
+	BeginReloadAssembly (161ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (686ms)
-		LoadAssemblies (581ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (466ms)
+		LoadAssemblies (389ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (263ms)
-			TypeCache.Refresh (225ms)
-				TypeCache.ScanAssembly (200ms)
-			ScanForSourceGeneratedMonoScriptInfo (30ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1191ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (131ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (732ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (966ms)
+		SetupLoadedEditorAssemblies (599ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (130ms)
-			ProcessInitializeOnLoadAttributes (738ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
-			AfterProcessingInitializeOnLoad (19ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (469ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 12.19 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 8.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4035 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 64 unused Assets / (61.1 KB). Loaded Objects now: 4496.
-Memory consumption went from 143.7 MB to 143.7 MB.
-Total: 5.046200 ms (FindLiveObjects: 0.483200 ms CreateObjectMapping: 0.221500 ms MarkObjects: 4.171500 ms  DeleteObjects: 0.168300 ms)
+Unloading 64 unused Assets / (61.2 KB). Loaded Objects now: 4496.
+Memory consumption went from 143.7 MB to 143.6 MB.
+Total: 3.987300 ms (FindLiveObjects: 0.312000 ms CreateObjectMapping: 0.121600 ms MarkObjects: 3.391300 ms  DeleteObjects: 0.160800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -179,3 +179,131 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1033639.147063 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Top Hit (54x52).png
+  artifactKey: Guid(87fac727b0bd6e54eb35b9edee4a58bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Top Hit (54x52).png using Guid(87fac727b0bd6e54eb35b9edee4a58bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40e8e4dfb336573bf02f837f53cbf289') in 0.093659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Blink (54x52).png
+  artifactKey: Guid(7437507eea616004d9e480efe0246e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Blink (54x52).png using Guid(7437507eea616004d9e480efe0246e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ceddfa07232e4e88e02dbe0e20f5a0b') in 0.020882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Falling Platforms/Off.png
+  artifactKey: Guid(a55e7edee8114614582f9960072bb7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Falling Platforms/Off.png using Guid(a55e7edee8114614582f9960072bb7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d039cc38362c8ec9efc9493a1dea335') in 0.014361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spikes/Idle.png
+  artifactKey: Guid(a92ae5f9e0d0d1d488b6b4808412b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spikes/Idle.png using Guid(a92ae5f9e0d0d1d488b6b4808412b038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b995188988b215a3f763c1eff8f8246f') in 0.014050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Saw/On (38x38).png
+  artifactKey: Guid(bf46d58f0a55afe41abe69818be5706e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Saw/On (38x38).png using Guid(bf46d58f0a55afe41abe69818be5706e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2801b7d19ab018649d5c44232ec73cc') in 0.027290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Idle.png
+  artifactKey: Guid(9ef136b7cea978e47a13f5896fd26cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Traps/Spike Head/Idle.png using Guid(9ef136b7cea978e47a13f5896fd26cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb32e5b6fce1826211411d4124606650') in 0.024050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.077523 seconds.
+  path: Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Terrain/Terrain (16x16).png
+  artifactKey: Guid(f32c08e9c8eee8e45a857ed321a26ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Pixel Adventure - pixelfrog/Terrain/Terrain (16x16).png using Guid(f32c08e9c8eee8e45a857ed321a26ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d06ac717cf0874ebe854902d9612b1d') in 0.182897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 146
+========================================================================
+Received Import Request.
+  Time since last request: 9.510885 seconds.
+  path: Assets/Platformer Assets/Art/BG/Zone 1/back.png
+  artifactKey: Guid(3905fa3a6ae455a4da05cb3b62ed4a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/BG/Zone 1/back.png using Guid(3905fa3a6ae455a4da05cb3b62ed4a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8198c01bb254e546792e7f16622a8fa2') in 0.019214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.775558 seconds.
+  path: Assets/Platformer Assets/Art/BG/Zone 2/back.png
+  artifactKey: Guid(c6cfb799c15d8ed44b7724c09f880abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/BG/Zone 2/back.png using Guid(c6cfb799c15d8ed44b7724c09f880abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3ed0ccd8d36c76ac77360e988704bd') in 0.015818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Platformer Assets/Art/BG/Zone 2/middle.png
+  artifactKey: Guid(d352658daa2d4f840b3cba631be1027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/BG/Zone 2/middle.png using Guid(d352658daa2d4f840b3cba631be1027a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54882db7e87b41716d555601ccc3677e') in 0.015906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.109328 seconds.
+  path: Assets/Platformer Assets/Art/Health Pickups/Full Health Pickup.png
+  artifactKey: Guid(b507345172ce7a64cac6d97f71eef3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Platformer Assets/Art/Health Pickups/Full Health Pickup.png using Guid(b507345172ce7a64cac6d97f71eef3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6888e0ddc62193ebd2ce6cc595b4ffc') in 0.020055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 2257.114040 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(7c18b2a8ad732fc4eafb5e00658a26fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(7c18b2a8ad732fc4eafb5e00658a26fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713778f9b554f9ccd98e9ac275546253') in 0.000929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.556825 seconds.
+  path: Assets/Sprites/split4key.png
+  artifactKey: Guid(879aa98c51c1f7240af74d06446f5672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/split4key.png using Guid(879aa98c51c1f7240af74d06446f5672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c301faa9075cdd8036794d2f4f82519') in 0.030416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 16.098895 seconds.
+  path: Assets/Sprites/split4key.png
+  artifactKey: Guid(879aa98c51c1f7240af74d06446f5672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/split4key.png using Guid(879aa98c51c1f7240af74d06446f5672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de66671e77a8ae291dd01ea178eef720') in 0.014297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 740.307412 seconds.
+  path: Assets/Sprites/split4door.png
+  artifactKey: Guid(fbeb83ae811dd0c409b3e788b154ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/split4door.png using Guid(fbeb83ae811dd0c409b3e788b154ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e47b5844d0ae7ee61bbbb9d2815445b') in 0.014029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 19.821688 seconds.
+  path: Assets/Sprites/split4door.png
+  artifactKey: Guid(fbeb83ae811dd0c409b3e788b154ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/split4door.png using Guid(fbeb83ae811dd0c409b3e788b154ffb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ef5c0f493db49809ea267bbd18eb40') in 0.014280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3

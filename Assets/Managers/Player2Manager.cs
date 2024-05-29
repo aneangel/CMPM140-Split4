@@ -109,6 +109,7 @@ public class Player2Manager : MonoBehaviour
     private void StartJumpState(){
         Debug.Log("Jump State");
         animator.Play("NinjaFrog_Jump");
+        AudioManager.instance.player2Jump();
     }
 
     private void UpdateJump(){

@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenu.cs">
+    <Files>
+      <File FileName="Assets/MainMenu.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CMPM140-Split4">
+            <Node name="Assets" expanded="True">
+              <Node name="MainMenu.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77ccfa25-3995-4f30-bf71-d54a5a071c4f" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -7,6 +7,7 @@ public class FallZone : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.gameObject.tag == "Player"){
             RespawnManager.instance.respawnPlayers();
+            AudioManager.instance.playReviveSound();
         }
     }
 }

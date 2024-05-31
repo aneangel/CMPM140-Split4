@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         hasKey = false;
-        playerTime = 10; //Players have 90 seconds to win game
+        playerTime = 180; //Players have 3 minutes to win game
     }
 
     // Update is called once per frame

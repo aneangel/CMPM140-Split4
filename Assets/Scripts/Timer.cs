@@ -14,5 +14,13 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int seconds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        
+        if (remainingTime <= 0)
+        {
+            remainingTime = 0;
+            //Time.timeScale = 0;
+            timerText.color = Color.red;
+        }
     }
 }

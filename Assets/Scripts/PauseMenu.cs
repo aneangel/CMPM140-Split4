@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using TMPro;
 public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        //Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
 
@@ -31,5 +33,10 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
+    }
+
+    public bool IsPauseMenuActive()
+    {
+        return pauseMenu.activeSelf;
     }
 }

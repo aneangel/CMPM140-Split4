@@ -7,6 +7,7 @@ public class RespawnManager : MonoBehaviour
     public static RespawnManager instance;
     private Vector2 player1SpawnPoint, player2SpawnPoint;
     [SerializeField] private GameObject player1, player2;
+    private int playerDeaths;
 
     void Awake(){
         if(instance == null){
@@ -19,11 +20,13 @@ public class RespawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player1SpawnPoint = new Vector2(-3.94f, 0);
-        player2SpawnPoint = new Vector2(0, 0);
+        playerDeaths = 0;
+        player1SpawnPoint = new Vector2(-7.24f, 0);
+        player2SpawnPoint = new Vector2(-5.66f, 0);
     }
 
     public void respawnPlayers(){ //Resetting player positions to checkpoint spawn point
+        playerDeaths += 1;
         player1.transform.position = player1SpawnPoint;
         player2.transform.position = player2SpawnPoint;
     }
@@ -31,5 +34,9 @@ public class RespawnManager : MonoBehaviour
     public void setSpawnPoint(Vector2 newPlayer1Spawn, Vector2 newPlayer2Spawn){ //Setting new spawnpoints
         player1SpawnPoint = newPlayer1Spawn;
         player2SpawnPoint = newPlayer2Spawn;
+    }
+
+    public int getPlayerDeathCount(){ //Return number of times players have died
+        return playerDeaths;
     }
 }

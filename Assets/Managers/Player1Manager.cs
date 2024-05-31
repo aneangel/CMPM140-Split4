@@ -22,7 +22,7 @@ public class Player1Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerMoveSpeed = 7f;
+        playerMoveSpeed = 8f;
         playerJumpSpeed = 7f;
         playerAcceleration = 1f;
         playerDrag = 0.9f;

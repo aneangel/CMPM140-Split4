@@ -23,7 +23,7 @@ public class Player2Manager : MonoBehaviour
     void Start()
     {
         playerMoveSpeed = 5f;
-        playerJumpSpeed = 7.8f;
+        playerJumpSpeed = 10f;
         playerAcceleration = 1f;
         playerDrag = 0.9f;
         direction = "right";

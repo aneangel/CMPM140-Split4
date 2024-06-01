@@ -1159,6 +1159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1SpawnPoint: {fileID: 219829301}
   player2SpawnPoint: {fileID: 1924026879}
+  anim: {fileID: 459565193}
+  checkpointManager: {fileID: 0}
 --- !u!61 &122250967
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1705,6 +1707,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1SpawnPoint: {fileID: 847882320}
   player2SpawnPoint: {fileID: 94916940}
+  anim: {fileID: 2064965147}
+  checkpointManager: {fileID: 0}
 --- !u!61 &195736351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1750,6 +1754,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4199944, y: 52.972572}
   m_EdgeRadius: 0
+--- !u!1 &219056649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219056651}
+  - component: {fileID: 219056650}
+  m_Layer: 0
+  m_Name: CheckpointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &219056650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219056649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a4ff4e1cede4f4eb719dd236f86d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCheckpoints: []
+--- !u!4 &219056651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219056649}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.368366, y: -2.6368477, z: -10.306755}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &219829300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +3676,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1SpawnPoint: {fileID: 1288842696}
   player2SpawnPoint: {fileID: 571950661}
+  anim: {fileID: 181918784}
+  checkpointManager: {fileID: 0}
 --- !u!61 &736158182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5147,6 +5198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1SpawnPoint: {fileID: 328725069}
   player2SpawnPoint: {fileID: 1282651139}
+  anim: {fileID: 1972143570}
+  checkpointManager: {fileID: 0}
 --- !u!61 &1152804073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6306,6 +6359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1SpawnPoint: {fileID: 894139414}
   player2SpawnPoint: {fileID: 1118679539}
+  anim: {fileID: 933718123}
+  checkpointManager: {fileID: 0}
 --- !u!61 &1447762878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14546,3 +14601,4 @@ SceneRoots:
   - {fileID: 834901682}
   - {fileID: 1839245239}
   - {fileID: 1443057457}
+  - {fileID: 219056651}

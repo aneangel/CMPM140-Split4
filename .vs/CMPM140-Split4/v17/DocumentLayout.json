@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\assets\\scripts\\damageplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\damageplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|c:\\users\\kaiyo\\onedrive\\documents\\_unityprojects\\cmpm140-split4\\assets\\scripts\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|c:\\users\\kaiyo\\onedrive\\documents\\_unityprojects\\cmpm140-split4\\assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\checkpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\ParallaxBG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ParallaxBG.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|c:\\users\\kaiyo\\onedrive\\documents\\_unityprojects\\cmpm140-split4\\assets\\scripts\\fallzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20AC9E59-CA5D-1425-0D79-0A8D3E2B15FF}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fallzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FallZone.cs",
-              "DocumentMoniker": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\FallZone.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FallZone.cs",
-              "ToolTip": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\FallZone.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FallZone.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "CheckpointManager.cs",
+              "DocumentMoniker": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\CheckpointManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CheckpointManager.cs",
+              "ToolTip": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\CheckpointManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CheckpointManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T20:17:07.702Z",
+              "WhenOpened": "2024-06-01T01:11:00.806Z",
               "EditorCaption": ""
             },
             {
@@ -49,34 +41,10 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Checkpoint.cs",
               "ToolTip": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\Checkpoint.cs",
               "RelativeToolTip": "Assets\\Scripts\\Checkpoint.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T20:13:19.688Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DamagePlayer.cs",
-              "DocumentMoniker": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\DamagePlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DamagePlayer.cs",
-              "ToolTip": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\DamagePlayer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DamagePlayer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T20:01:22.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ParallaxBG.cs",
-              "DocumentMoniker": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\ParallaxBG.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ParallaxBG.cs",
-              "ToolTip": "C:\\Users\\Kaiyo\\OneDrive\\Documents\\_UnityProjects\\CMPM140-Split4\\Assets\\Scripts\\ParallaxBG.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ParallaxBG.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:42:29.839Z"
             }
           ]
         }

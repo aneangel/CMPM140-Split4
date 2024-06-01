@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private bool isGameOver, playerWin, hasKey;
     private float playerTime;
+    private int keyCount;
 
     public GameObject EndScreen;
 
@@ -28,7 +29,8 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = false;
         hasKey = false;
-        playerTime = 180; //Players have 3 minutes to win game
+        keyCount = 0;
+        playerTime = 300; //Players have 5 minutes to win game
     }
 
     // Update is called once per frame
@@ -67,7 +69,10 @@ public class GameManager : MonoBehaviour
     }
 
     public void playerHasKeyTrue(){
-        hasKey = true;
+        keyCount += 1;
+        if(keyCount == 2){ //Set to true if both keys acquired
+            hasKey = true;
+        }
     }
 
     public bool playerHasKeyStatus(){

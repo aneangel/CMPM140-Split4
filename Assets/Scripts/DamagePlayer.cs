@@ -22,6 +22,7 @@ public class Damage : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager.instance.playReviveSound();
             RespawnManager.instance.respawnPlayers();
         }
         

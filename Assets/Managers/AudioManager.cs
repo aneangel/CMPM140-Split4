@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    [SerializeField] private AudioSource player1Source, player2Source, fallZoneSource;
+    [SerializeField] private AudioSource backgroundMusic, player1Source, player2Source, fallZoneSource, keySource;
 
     void Awake(){
         if(instance == null){
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        backgroundMusic.Play();
     }
 
     public void player1Jump(){
@@ -31,5 +31,9 @@ public class AudioManager : MonoBehaviour
 
     public void playReviveSound(){
         fallZoneSource.Play();
+    }
+
+    public void playKeySound(){
+        keySource.Play();
     }
 }

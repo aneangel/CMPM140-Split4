@@ -4,6 +4,11 @@ public class ButtonController : MonoBehaviour
 {
     //public VerticalPlatformController verticalPlatform;
     [SerializeField] private Sprite pressedImage;
+    private bool pressed;
+
+    void Start(){
+        pressed = false;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +18,7 @@ public class ButtonController : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().material.color = Color.green; //Changing colour of sprite to green
             this.gameObject.GetComponent<BoxCollider2D>().enabled = false; //Deactivating BoxCollider2D
             this.gameObject.GetComponent<AudioSource>().Play(); //Playing Audio
+            pressed = true;
             //verticalPlatform.MoveUp();
         }
     }
@@ -24,4 +30,8 @@ public class ButtonController : MonoBehaviour
     //         verticalPlatform.MoveDown();
     //     }
     // }
+
+    public bool isPressed(){
+        return pressed;
+    }
 }

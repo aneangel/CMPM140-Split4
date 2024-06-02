@@ -14,7 +14,7 @@ public class SpikeGroup : MonoBehaviour
 
     IEnumerator activateSpikes(){ // called via StartCoroutine(activateSpikes());
         while(GameManager.instance.getGameOverStatus() == false){ //While not game over
-            yield return new WaitForSeconds(1.25f); //Wait 1.5 seconds
+            yield return new WaitForSeconds(1.3f); //Wait 1.3 seconds
 
             if(!spikeGroup.activeInHierarchy){ //If spikeGroup currently not active, set to active
                 spikeGroup.SetActive(true);

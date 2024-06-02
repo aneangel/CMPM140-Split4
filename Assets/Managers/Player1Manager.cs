@@ -83,7 +83,6 @@ public class Player1Manager : MonoBehaviour
 
     //INDIVIDUAL STATE FUNCTIONS
     private void StartIdleState(){
-        Debug.Log("Idle State");
         animator.Play("NinjaFrog_Idle");
     }
 
@@ -94,7 +93,6 @@ public class Player1Manager : MonoBehaviour
     }
 
     private void StartMoveState(){
-        Debug.Log("Move State");
         animator.Play("NinjaFrog_Run");
     }
 
@@ -107,7 +105,6 @@ public class Player1Manager : MonoBehaviour
     }
 
     private void StartJumpState(){
-        Debug.Log("Jump State");
         animator.Play("NinjaFrog_Jump");
         AudioManager.instance.player1Jump();
     }

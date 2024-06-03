@@ -4,49 +4,68 @@ using System.Collections.Generic;
 public class MovingPlatformController : MonoBehaviour
 {
     public List<Vector3> waypoints = new List<Vector3>();
-    public float speed = 2.0f;
+    public float baseSpeed = 2.0f; // Base speed, adjusted based on the farthest distance
     private int currentTarget = 0;
-    private int direction = 1; // Direction towards the next waypoint
+    private float waitTime = 0.5f; // Time at the middle point
+    private float waitTimer;
+    private bool isWaiting = false;
+    private float actualSpeed;
+
+    void Start()
+    {
+        if (waypoints.Count != 2)
+        {
+            Debug.LogError("Each platform must have exactly two waypoints.", this);
+            enabled = false;
+            return;
+        }
+        // Calculate the maximum distance to synchronize the speed
+        float maxDistance = Vector3.Distance(waypoints[0], waypoints[1]);
+        actualSpeed = baseSpeed * (maxDistance / FindMaxDistanceAmongPlatforms());
+    }
 
     void Update()
     {
-        if (waypoints.Count < 2)
+        if (isWaiting)
         {
-            Debug.LogError("Insufficient waypoints set on " + gameObject.name);
-            return; // Exit if not enough waypoints
+            waitTimer += Time.deltaTime;
+            if (waitTimer >= waitTime)
+            {
+                waitTimer = 0f;
+                isWaiting = false;
+                currentTarget = 1 - currentTarget; // Toggle between 0 and 1
+            }
         }
+        else
+        {
+            MovePlatform();
+        }
+    }
 
-        // Move platform towards the current target waypoint
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentTarget], speed * Time.deltaTime);
+    private void MovePlatform()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[currentTarget], actualSpeed * Time.deltaTime);
 
-        // Check if platform has reached the current target waypoint
         if (Vector3.Distance(transform.position, waypoints[currentTarget]) < 0.1f)
         {
-            // Switch direction at the end points
-            if (currentTarget == waypoints.Count - 1)
-                direction = -1;
-            else if (currentTarget == 0)
-                direction = 1;
-
-            // Update the current target based on the direction
-            currentTarget += direction;
+            isWaiting = true; // Start waiting when a waypoint is reached
         }
+    }
+
+    private float FindMaxDistanceAmongPlatforms()
+    {
+        // This method should ideally return the maximum distance of any platform to ensure synchronization.
+        // You need to implement a way to get all platforms' maximum distances and return the highest.
+        return Vector3.Distance(waypoints[0], waypoints[1]); // Temporary, adjust accordingly.
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2") // Make sure your player GameObject has the tag "Player"
-        {
-            collision.transform.SetParent(this.transform);
-        }
+        collision.transform.SetParent(transform);
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player1" || collision.gameObject.tag == "Player2")
-        {
-            collision.transform.SetParent(null);
-        }
+        collision.transform.SetParent(null);
     }
-
 }

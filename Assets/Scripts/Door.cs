@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.gameObject.tag == "Player" && GameManager.instance.playerHasKeyStatus() == true){ //End Game if Players have keys
             GameManager.instance.gameOver(true);
+            this.gameObject.GetComponent<AudioSource>().Play(); //Play Win SFX
         } else if(collider.gameObject.tag == "Player" && GameManager.instance.playerHasKeyStatus() == false){ //Show instructions if not
             if(isShowingInstructions == false){
                 isShowingInstructions = true;

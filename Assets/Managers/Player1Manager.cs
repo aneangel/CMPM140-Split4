@@ -27,6 +27,7 @@ public class Player1Manager : MonoBehaviour
         playerAcceleration = 1f;
         playerDrag = 0.9f;
         direction = "right";
+        this.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -43,6 +44,10 @@ public class Player1Manager : MonoBehaviour
             DetermineNewState();
         }
         UpdateState(); 
+
+        if(GameManager.instance.getGameOverStatus() == true){ //Deactivate player if GameOver
+            this.gameObject.SetActive(false);
+        }
     }
 
     //Fixed Update is called at specific rates defined by the Unity editor

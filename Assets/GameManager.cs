@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour
     }
 
     public void gameOver(bool playerWinStatus){
-        Debug.Log("GAME OVER!");
         playerWin = playerWinStatus;
         isGameOver = true;
     }

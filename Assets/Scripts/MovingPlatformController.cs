@@ -59,13 +59,13 @@ public class MovingPlatformController : MonoBehaviour
         return Vector3.Distance(waypoints[0], waypoints[1]); // Temporary, adjust accordingly.
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        collision.transform.SetParent(transform);
-    }
+    // void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     collision.transform.SetParent(transform);
+    // }
 
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        collision.transform.SetParent(null);
-    }
+    // void OnCollisionExit2D(Collision2D collision)
+    // {
+    //     collision.transform.SetParent(null);
+    // }
 }

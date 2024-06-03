@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject YouWin;
     public GameObject YouLose;
     public PauseMenu pauseMenu;
+    [SerializeField] private GameObject returnInstructions;
 
     void Awake(){
         if(instance == null){
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         hasKey = false;
         keyCount = 0;
-        playerTime = 300; //Players have 5 minutes to win game
+        playerTime = 450; //Players have 7.5 minutes to win game
     }
 
     // Update is called once per frame
@@ -72,6 +73,8 @@ public class GameManager : MonoBehaviour
         keyCount += 1;
         if(keyCount == 2){ //Set to true if both keys acquired
             hasKey = true;
+            returnInstructions.SetActive(true); //Display Return Instructions
+            StartCoroutine(returnInstructionsOff());
         }
     }
 
@@ -95,5 +98,10 @@ public class GameManager : MonoBehaviour
 
     public float getPlayerTime(){ //Returns time players have left
         return playerTime;
+    }
+
+    IEnumerator returnInstructionsOff(){
+        yield return new WaitForSeconds(5f); //After 5 seconds, turn off instructions
+        returnInstructions.SetActive(false);
     }
 }
